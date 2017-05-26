@@ -41,7 +41,7 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: #f46842;
+  background: linear-gradient(to top right, #FFB01E, #FF8B32);
   font-family: "News Cycle", sans-serif;
   font-size: 24px; }
 
