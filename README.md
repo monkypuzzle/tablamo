@@ -1,30 +1,23 @@
-> **Note**: This branch (master) contains a skeleton without any app code, perfect for creating a _new_ application or challenge. If you're looking for an example app built with this skeleton, take a look at the [example](/../..//tree/example) branch which includes basic CRUD and RSpec tests.
+# Tablamo!
 
-### Purpose
-The Sinatra Skeleton:
+## Description
+A Sinatra app that uses the [MusixMatch API](https://developer.musixmatch.com/) to fetch lyrics. Users can then use the lyrics to generate their own guitar or ukulele tabs.
 
-1. Provides a foundation for building challenges or creating a new Sinatra application.
-2. Demonstrates a reasonable set of practices around building Sinatra applications.
-3. Eases the transition to Rails for Dev Bootcamp students
+### Details
+* Employs the MVC model.
+* Makes use of the MusixMatch API.
+* ___Database___: PostgreSQL  
+* ___Dependencies___: HttParty
 
-### Quickstart
+## Functionality
 
-1.  `bundle install`
-2.  `shotgun config.ru`
+### Fetching Lyrics
+Users simply have to enter an artist name and song, and hit 'Get Lyrics'! The application fetches and parses the lyrics, then generates a form. | 
+------------------------------ | 
+![Fetching Lyrics](https://github.com/pnewsam/tablamo/blob/master/readme_assets/fetching_lyrics.gif "Fetching Lyrics") |
 
-As needed, create models & migrations with the `rake` tasks:
-
-```
-rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks
-rake generate:model      # Create an empty model in app/models, e.g., rake generate:model NAME=User
-```
-
-### Contributing
-
-We would love for you to help make the skeleton more awesome, There are three ways to contribute:
-
-1. Ask for a bug fix or enhancement!
-2. Submit a pull request for a bug fix or enhancement!
-3. Code review an open pull request!
-
-Be prepared to give and receive specific, actionable, and kind feedback!
+### Creating Tabs
+After filling out the form, the user simply hits 'Create Tab', and ___tablamo!___ The tab gets saved and added to the list on the homepage.|
+------------------------------ | 
+![Filling in Chords](https://github.com/pnewsam/tablamo/blob/master/readme_assets/filling_in_chords.gif "Filling in Chords") |
+![Generating Tab](https://github.com/pnewsam/tablamo/blob/master/readme_assets/generating_tab.gif "Generating Tab") |
